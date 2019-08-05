@@ -6,3 +6,8 @@ iTop has one CI named Encloures. This is the 'box' in witch you can add blade se
 By default, these enclosures don't have any connection abilities, and you have to connect the power to each internal server (not really representative of the truth, for me)
 
 This extension add the possibility to connect power (with a redundant power access, like for servers), and also to connect network (for the administative connections)
+
+History
+=======
+
+1.1.0 : Current version. Operational for me, YMMV :) Just bundled to push on git

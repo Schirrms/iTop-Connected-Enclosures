@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<itop_design xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.5">
+	<constants>
+	</constants>
+	<classes>
+		<class id="Enclosure">
+			<parent _delta="redefine">ConnectableCI</parent>
+			<fields>
+				<field id="powerA_id" xsi:type="AttributeExternalKey" _delta="define">
+					<filter><![CDATA[SELECT PowerConnection WHERE location_id= :this->location_id]]></filter>
+					<dependencies>
+						<attribute id="location_id"/>
+					</dependencies>
+					<sql>powera_id</sql>
+					<target_class>PowerConnection</target_class>
+					<is_null_allowed>true</is_null_allowed>
+					<on_target_delete>DEL_MANUAL</on_target_delete>
+					<allow_target_creation>false</allow_target_creation>
+				</field>
+				<field id="powerA_name" xsi:type="AttributeExternalField" _delta="define">
+					<extkey_attcode>powerA_id</extkey_attcode>
+					<target_attcode>name</target_attcode>
+				</field>
+				<field id="powerB_id" xsi:type="AttributeExternalKey" _delta="define">
+					<filter><![CDATA[SELECT PowerConnection WHERE location_id= :this->location_id]]></filter>
+					<dependencies>
+						<attribute id="location_id"/>
+					</dependencies>
+					<sql>powerB_id</sql>
+					<target_class>PowerConnection</target_class>
+					<is_null_allowed>true</is_null_allowed>
+					<on_target_delete>DEL_MANUAL</on_target_delete>
+					<allow_target_creation>false</allow_target_creation>
+				</field>
+				<field id="powerB_name" xsi:type="AttributeExternalField" _delta="define">
+					<extkey_attcode>powerB_id</extkey_attcode>
+					<target_attcode>name</target_attcode>
+				</field>
+				<field id="redundancy" xsi:type="AttributeRedundancySettings" _delta="define">
+					<sql>redundancy</sql>
+					<relation_code>impacts</relation_code>
+					<from_class>PowerConnection</from_class>
+					<neighbour_id>enclosure</neighbour_id>
+					<enabled>true</enabled>
+					<enabled_mode>fixed</enabled_mode>
+					<min_up>1</min_up>
+					<min_up_type>count</min_up_type>
+					<min_up_mode>fixed</min_up_mode>
+				</field>
+			</fields>
+			<presentation>
+				<details>
+					<items>
+						<item id="physicalinterface_list">
+						 <rank>182</rank>
+						</item>
+						<item id="networkdevice_list">
+							<rank>184</rank>
+						</item>
+						<item id="fieldset:Server:power" _delta="define">
+							<rank>200</rank>
+							<items>
+								<item id="powerA_id" _delta="define">
+									<rank>10</rank>
+								</item>
+								<item id="powerB_id" _delta="define">
+									<rank>20</rank>
+								</item>
+								<item id="redundancy" _delta="define">
+									<rank>30</rank>
+								</item>
+							</items>
+						</item>
+					</items>
+				</details>
+			</presentation>
+		</class>
+		<class id="PowerConnection">
+			<relations>
+				<relation id="impacts">
+					<neighbours>
+						<neighbour id="enclosure" _delta="define">
+							<query_down>SELECT Enclosure WHERE powerA_id = :this-&gt;id OR powerB_id = :this-&gt;id</query_down>
+							<query_up>SELECT PowerConnection WHERE id = :this-&gt;powerA_id OR id = :this-&gt;powerB_id</query_up>
+						</neighbour>
+					</neighbours>
+				</relation>
+			</relations>
+		</class>
+	</classes>
+	<user_rights>
+		<groups>
+		</groups>
+		<profiles>
+		</profiles>
+	</user_rights>
+</itop_design>

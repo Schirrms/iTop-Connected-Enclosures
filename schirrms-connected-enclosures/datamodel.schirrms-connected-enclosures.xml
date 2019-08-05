@@ -3,7 +3,7 @@
 	<constants>
 	</constants>
 	<classes>
-		<class id="Enclosure">
+		<class id="Enclosure" _delta="must_exist">
 			<parent _delta="redefine">ConnectableCI</parent>
 			<fields>
 				<field id="powerA_id" xsi:type="AttributeExternalKey" _delta="define">

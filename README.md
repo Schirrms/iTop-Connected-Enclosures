@@ -11,3 +11,4 @@ History
 =======
 
 1.1.0 : Current version. Operational for me, YMMV :) Just bundled to push on git
+1.1.1 : a required demendancy was missing 

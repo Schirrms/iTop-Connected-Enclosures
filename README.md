@@ -9,9 +9,11 @@ By default, these enclosures don't have any connection abilities, and you have t
 This extension add the possibility to connect power (with a redundant power access, like for servers), and also to connect network (Mainly for administative connections)
 
 In the 'Properties' Tab :
+
 ![Enclosure over connections](images/Enclosures-Power.png)
 
 And there are the standard 'Network Interfaces' and 'Network Devices' TAB that you can use as for a Server
+
 ![Enclosure Network Interfaces](images/Enclosures-NIC.png)
 
 # Installation

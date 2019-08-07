@@ -75,7 +75,7 @@
 				</details>
 			</presentation>
 		</class>
-		<class id="PowerConnection">
+		<class id="PowerConnection" _delta="must_exist">
 			<relations>
 				<relation id="impacts">
 					<neighbours>

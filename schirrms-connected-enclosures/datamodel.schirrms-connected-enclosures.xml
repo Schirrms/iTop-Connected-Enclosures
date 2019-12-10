@@ -51,23 +51,27 @@
 			<presentation>
 				<details>
 					<items>
-						<item id="physicalinterface_list">
-						 <rank>182</rank>
+						<item id="genericcommphysinterface_list" _delta="define">
+							<rank>55</rank>
 						</item>
-						<item id="networkdevice_list">
-							<rank>184</rank>
+						<item id="genericcommvirtinterface_list" _delta="define">
+							<rank>56</rank>
 						</item>
-						<item id="fieldset:Server:power" _delta="define">
-							<rank>200</rank>
+						<item id="col:col2">
 							<items>
-								<item id="powerA_id" _delta="define">
-									<rank>10</rank>
-								</item>
-								<item id="powerB_id" _delta="define">
-									<rank>20</rank>
-								</item>
-								<item id="redundancy" _delta="define">
-									<rank>30</rank>
+								<item id="fieldset:Server:power" _delta="define">
+									<rank>200</rank>
+									<items>
+										<item id="powerA_id" _delta="define">
+											<rank>10</rank>
+										</item>
+										<item id="powerB_id" _delta="define">
+											<rank>20</rank>
+										</item>
+										<item id="redundancy" _delta="define">
+											<rank>30</rank>
+										</item>
+									</items>
 								</item>
 							</items>
 						</item>

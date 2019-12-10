@@ -1,7 +1,11 @@
 # iTop-Connected-Enclosures
 This extension add connection abilities to the iTop enclosure
 
-[TOC]
+# Table of Content
+* [iTop-Connected-Enclosures](#itop-connected-enclosures)
+* [Goal](#goal)
+* [Changes](#changes)
+* [Installation](#installation)
 
 # Goal
 
@@ -19,5 +23,10 @@ And there are the standard 'Network Interfaces' and 'Network Devices' TAB that y
 
 ![Enclosure Network Interfaces](images/Enclosures-NIC.png)
 
+# Changes
+
+As of version 1.2, no presentation of the network connections anymore, but instead only Generic connections (as this work is mainly for my company :) ) However, you can donwload the former version in the schirrms-connected-enclosures-1.1.3.zip file
+
 # Installation
+
 As for all my extensions, just download the zip file, and copy the 'schirrms-...' directory in your extensions directory, then rerun the setup as usual.

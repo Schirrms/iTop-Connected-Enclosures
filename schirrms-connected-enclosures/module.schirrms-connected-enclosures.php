@@ -5,17 +5,18 @@
 
 SetupWebPage::AddModule(
 	__FILE__, // Path to the current file, all other file names are relative to the directory containing this file
-	'schirrms-connected-enclosures/1.1.3',
+	'schirrms-connected-enclosures/1.2.0',
 	array(
 		// Identification
 		//
-		'label' => 'Add Power and Network connection to Enclosures',
+		'label' => 'Add Power and Generic Connections to Enclosures',
 		'category' => 'business',
 
 		// Setup
 		//
 		'dependencies' => array( 
-			'itop-datacenter-mgmt/2.5.0',
+			'itop-datacenter-mgmt/2.6.0',
+			'schirrms-generic-connection/0.7.3'
 		),
 		'mandatory' => false,
 		'visible' => true,

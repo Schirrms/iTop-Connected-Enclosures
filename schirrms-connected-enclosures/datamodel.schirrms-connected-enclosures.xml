@@ -57,6 +57,9 @@
 						<item id="genericcommvirtinterface_list" _delta="define">
 							<rank>56</rank>
 						</item>
+						<item id="modelnumber" _delta="define">
+							<rank>98</rank>
+						</item>
 						<item id="col:col2">
 							<items>
 								<item id="fieldset:Server:power" _delta="define">

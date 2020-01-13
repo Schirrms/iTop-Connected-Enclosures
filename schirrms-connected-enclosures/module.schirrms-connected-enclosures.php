@@ -5,7 +5,7 @@
 
 SetupWebPage::AddModule(
 	__FILE__, // Path to the current file, all other file names are relative to the directory containing this file
-	'schirrms-connected-enclosures/1.2.0',
+	'schirrms-connected-enclosures/1.2.1',
 	array(
 		// Identification
 		//
@@ -16,7 +16,8 @@ SetupWebPage::AddModule(
 		//
 		'dependencies' => array( 
 			'itop-datacenter-mgmt/2.6.0',
-			'schirrms-generic-connection/0.7.3'
+			'schirrms-generic-connection/0.7.3',
+			'schirrms-server-addfields/1.1.4'
 		),
 		'mandatory' => false,
 		'visible' => true,

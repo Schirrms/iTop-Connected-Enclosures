@@ -51,19 +51,21 @@
 			<presentation>
 				<details>
 					<items>
-						<item id="genericcommphysinterface_list" _delta="define">
-							<rank>55</rank>
-						</item>
-						<item id="genericcommvirtinterface_list" _delta="define">
-							<rank>56</rank>
-						</item>
-						<item id="modelnumber" _delta="define">
-							<rank>98</rank>
-						</item>
-						<item id="col:col2">
+						<item id="col:col0">
 							<items>
-								<item id="fieldset:Server:power" _delta="define">
-									<rank>200</rank>
+								<item id="fieldset:Enclosure:moreinfo" _delta="must_exist">
+									<items>
+										<item id="modelnumber" _delta="define">
+											<rank>38</rank>
+										</item>
+									</items>
+								</item>
+							</items>
+						</item>
+						<item id="col:col1">
+							<items>
+								<item id="fieldset:Enclosure:power" _delta="define">
+									<rank>20</rank>
 									<items>
 										<item id="powerA_id" _delta="define">
 											<rank>10</rank>
@@ -77,6 +79,12 @@
 									</items>
 								</item>
 							</items>
+						</item>
+						<item id="genericcommphysinterface_list" _delta="define">
+							<rank>55</rank>
+						</item>
+						<item id="genericcommvirtinterface_list" _delta="define">
+							<rank>56</rank>
 						</item>
 					</items>
 				</details>

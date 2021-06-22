@@ -17,7 +17,8 @@ SetupWebPage::AddModule(
 		'dependencies' => array( 
 			'itop-datacenter-mgmt/2.6.0',
 			'schirrms-generic-connection/0.7.3',
-			'schirrms-server-addfields/1.1.4'
+			'schirrms-server-addfields/1.1.4',
+			'molkobain-datacenter-view/1.7.0'
 		),
 		'mandatory' => false,
 		'visible' => true,
